@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         lv = findViewById(R.id.lvTasks);
         spinner = findViewById(R.id.spinner);
 
+        btnDel.setEnabled(false);
+
         alTasks = new ArrayList<>();
 
         final ArrayAdapter<String> aaTasks = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1,alTasks);
